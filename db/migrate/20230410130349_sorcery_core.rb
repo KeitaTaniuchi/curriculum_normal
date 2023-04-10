@@ -5,6 +5,10 @@ class SorceryCore < ActiveRecord::Migration[5.2]
       t.string :crypted_password
       t.string :salt
 
+      #自分で追加
+      t.string :first_name, null: false
+      t.string :last_name, null: false
+
       t.timestamps                null: false
     end
 
