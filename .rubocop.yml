@@ -2,16 +2,16 @@
 
 AllCops:
   Exclude:
-    - 'vendor/**/*'
-    - 'db/**/*'
-    - 'bin/**/*'
-    - 'spec/**/*'
-    - 'node_modules/**/*'
+    - "vendor/**/*"
+    - "db/**/*"
+    - "bin/**/*"
+    - "spec/**/*"
+    - "node_modules/**/*"
   DisplayCopNames: true
 
 Layout/MultilineBlockLayout:
   Exclude:
-    - 'spec/**/*_spec.rb'
+    - "spec/**/*_spec.rb"
 
 Layout/LineLength:
   Enabled: false
@@ -22,9 +22,9 @@ Metrics/AbcSize:
 Metrics/BlockLength:
   Max: 30
   Exclude:
-    - 'Gemfile'
-    - 'config/**/*'
-    - 'spec/**/*_spec.rb'
+    - "Gemfile"
+    - "config/**/*"
+    - "spec/**/*_spec.rb"
 
 Metrics/ClassLength:
   CountComments: false
@@ -39,14 +39,14 @@ Metrics/MethodLength:
 
 Naming/AccessorMethodName:
   Exclude:
-    - 'app/controllers/**/*'
+    - "app/controllers/**/*"
 
 Style/AsciiComments:
   Enabled: false
 
 Style/BlockDelimiters:
   Exclude:
-    - 'spec/**/*_spec.rb'
+    - "spec/**/*_spec.rb"
 
 Style/ClassAndModuleChildren:
   Enabled: false
