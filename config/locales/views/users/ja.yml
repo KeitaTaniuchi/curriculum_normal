@@ -1,0 +1,6 @@
+ja:
+  users:
+    new:
+      title: "ユーザー登録"
+      submit: "登録"
+      to_login_page: "ログインページへ"
