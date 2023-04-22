@@ -2,4 +2,4 @@ ja:
   user_sessions:
     new:
       to_forgot_your_password: "パスワードをお忘れの方はこちら"
-      to_registration_page: "ログインページへ"
+      to_registration_page: "登録ページへ"
