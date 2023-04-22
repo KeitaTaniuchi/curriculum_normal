@@ -6,8 +6,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      redirect_to login_path
+      redirect_to login_path, success: I18n.t('.flash.user_register_success')
     else
+      flash.now[:danger] = I18n.t('.flash.user_register_failed')
       render :new
     end
   end
