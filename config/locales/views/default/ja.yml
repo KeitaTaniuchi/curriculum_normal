@@ -4,3 +4,14 @@ ja:
     logout: "ログアウト"
     profile: "プロフィール"
     register: "登録"
+  flash:
+    new: 作成しました！
+    updated: 更新しました！
+    failed: 失敗しました！
+    destroy: 削除しました！
+    login: ログインしました！
+    logout: ログアウトしました！
+    limited_access: 不正な侵入です！！
+    tag_follow: タグをフォローしました！
+    tag_not_follow: タグをフォローできませんでした。
+    tag_remove_follow: タグのフォローを解除しました！
