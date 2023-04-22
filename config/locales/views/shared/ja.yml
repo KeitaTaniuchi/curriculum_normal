@@ -1,0 +1,9 @@
+ja:
+  shared:
+    header:
+      bbs: "掲示板"
+      bbs_list: "掲示板一覧"
+      bbs_creation: "掲示板作成"
+      bookmarks_list: "ブックマーク一覧"
+      to_forgot_your_password: "パスワードをお忘れの方はこちら"
+      to_registration_page: "ログインページへ"
