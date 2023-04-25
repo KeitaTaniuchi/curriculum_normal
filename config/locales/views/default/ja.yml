@@ -5,8 +5,9 @@ ja:
     profile: "プロフィール"
     register: "登録"
   flash:
-    login_success: ログインしました
-    login_failed: ログインに失敗しました
-    logout: ログアウトしました
+    login_success: "ログインしました"
+    login_failed: "ログインに失敗しました"
+    logout: "ログアウトしました"
+    require_login: "ログインしてください"
     user_register_success: "ユーザー登録が完了しました"
     user_register_failed: "ユーザー登録に失敗しました"
