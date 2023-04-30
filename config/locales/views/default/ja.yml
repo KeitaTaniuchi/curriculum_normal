@@ -1,10 +1,14 @@
 ja:
   defaults:
+    boards_creation: "掲示板作成"
+    creation: "作成"
     login: "ログイン"
     logout: "ログアウト"
     profile: "プロフィール"
     register: "登録"
   flash:
+    create_board_success: "掲示板を作成しました"
+    create_board_failed: "掲示板の作成に失敗しました"
     login_success: "ログインしました"
     login_failed: "ログインに失敗しました"
     logout: "ログアウトしました"
