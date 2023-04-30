@@ -2,9 +2,9 @@ puts 'Start creating administrator ...'
 User.create!(
   last_name: "谷内",
   first_name: "圭太",
-  email: "barbaakonta1995@gmail.com",
-  password: "keita1995",
-  password_confirmation: "keita1995"
+  email: "barbeekonta1995@gmail.com",
+  password: "test",
+  password_confirmation: "test"
 )
 puts '✨Finish creating administrator!!'
 
