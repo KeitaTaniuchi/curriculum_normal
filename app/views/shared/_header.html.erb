@@ -17,7 +17,7 @@
 
           <div class='dropdown-menu dropdown-menu-right'>
             <%= link_to t('.boards_list'), boards_path, class:'dropdown-item' %>
-            <%= link_to t('.boards_creation'), '#', class:'dropdown-item' %>
+            <%= link_to I18n.t('.defaults.boards_creation'), new_board_path, class:'dropdown-item' %>
           </div>
         </li>
 
