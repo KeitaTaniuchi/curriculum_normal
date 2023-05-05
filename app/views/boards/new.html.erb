@@ -9,7 +9,7 @@
         </div>
         <div class="form-group">
           <%= f.label :body, Board.human_attribute_name(:body) %>
-          <%= f.text_field :body, class: 'form-control' %>
+          <%= f.text_area :body, class: 'form-control' %>
         </div>
         <div class="actions">
           <%= f.submit I18n.t('.defaults.creation'), class: 'btn btn-primary' %>
