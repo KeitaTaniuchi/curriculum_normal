@@ -7,15 +7,15 @@ class UserSessionsController < ApplicationController
     @user = login(params[:email], params[:password])
 
     if @user
-      redirect_back_or_to boards_path, success: I18n.t('.flash.login_success')
+      redirect_back_or_to boards_path, success: I18n.t('.flash.succeeded', item: I18n.t('.defaults.login'))
     else
-      flash.now[:danger] = I18n.t('.flash.login_failed')
+      flash.now[:danger] = I18n.t('.flash.failed', item: I18n.t('.defaults.login'))
       render :new
     end
   end
 
   def destroy
     logout
-    redirect_to root_path, success: I18n.t('.flash.logout')
+    redirect_to root_path, success: I18n.t('.flash.succeeded', item: I18n.t('.defaults.logout'))
   end
 end

@@ -1,9 +1,5 @@
 ja:
   shared:
     header:
-      boards: "掲示板"
       boards_list: "掲示板一覧"
-      boards_creation: "掲示板作成"
       bookmarks_list: "ブックマーク一覧"
-      to_forgot_your_password: "パスワードをお忘れの方はこちら"
-      to_registration_page: "ログインページへ"

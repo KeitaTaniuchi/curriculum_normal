@@ -1,16 +1,17 @@
 ja:
   defaults:
+    boards_creation: "掲示板作成"
+    creation: "作成"
     login: "ログイン"
     logout: "ログアウト"
     profile: "プロフィール"
     register: "登録"
   flash:
-    login_success: "ログインしました"
-    login_failed: "ログインに失敗しました"
-    logout: "ログアウトしました"
+    created: "%{item}を作成しました"
+    not_created: "%{item}を作成できませんでした"
+    succeeded: "%{item}に成功しました"
+    failed: "%{item}に失敗しました"
     require_login: "ログインしてください"
-    user_register_success: "ユーザー登録が完了しました"
-    user_register_failed: "ユーザー登録に失敗しました"
   time:
     formats:
       default: "%Y/%m/%d %H:%M"

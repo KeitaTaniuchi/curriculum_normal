@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2">
+      <h1><%=I18n.t('.defaults.boards_creation')%></h1>
+      <%= form_with(model: @board, local: true) do |f| %>
+        <div class="form-group">
+          <%= f.label :title, Board.human_attribute_name(:title) %>
+          <%= f.text_field :title, class: 'form-control' %>
+        </div>
+        <div class="form-group">
+          <%= f.label :body, Board.human_attribute_name(:body) %>
+          <%= f.text_field :body, class: 'form-control' %>
+        </div>
+        <div class="actions">
+          <%= f.submit I18n.t('.defaults.creation'), class: 'btn btn-primary' %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

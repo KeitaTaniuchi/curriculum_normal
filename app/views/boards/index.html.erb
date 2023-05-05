@@ -15,7 +15,7 @@
       <div class="row">
         <% if @boards.present? %>
           <% @boards.each do |board| %>
-            <%= render @boards %>
+            <%= render board %>
           <% end %>
         <% else %>
           <p><%= t('.no_message_board') %></p>
