@@ -7,14 +7,11 @@ ja:
     profile: "プロフィール"
     register: "登録"
   flash:
-    create_board_success: "掲示板を作成しました"
-    create_board_failed: "掲示板の作成に失敗しました"
-    login_success: "ログインしました"
-    login_failed: "ログインに失敗しました"
-    logout: "ログアウトしました"
+    created: "%{item}を作成しました"
+    not_created: "%{item}を作成できませんでした"
+    succeeded: "%{item}に成功しました"
+    failed: "%{item}に失敗しました"
     require_login: "ログインしてください"
-    user_register_success: "ユーザー登録が完了しました"
-    user_register_failed: "ユーザー登録に失敗しました"
   time:
     formats:
       default: "%Y/%m/%d %H:%M"
