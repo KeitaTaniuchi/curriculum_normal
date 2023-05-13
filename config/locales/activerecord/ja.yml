@@ -7,6 +7,7 @@ ja:
       board:
         title: "タイトル"
         body: "本文"
+        board_image: "サムネイル"
       user:
         last_name: "姓"
         first_name: "名"
