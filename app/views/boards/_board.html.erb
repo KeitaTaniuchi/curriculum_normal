@@ -2,7 +2,9 @@
   <div class="row">
     <div class="col">
       <div id="board-id-<%= board.id %>">
-        <div class="card"><img class="card-img-top" src="/assets/board_placeholder.png" width="300" height="200"/>
+        <div class="card">
+          <%= image_tag board.board_image_url, class: 'card-img-top', size: '300x200' %>
+          <%# board_imageが存在しない場合にはdefault_url(app/uploaders/board_image_uploader.rbに記述)が呼び出される　%>
           <div class="card-body">
             <h4 class="card-title">
               <a href="#"><%= board.title %></a>
