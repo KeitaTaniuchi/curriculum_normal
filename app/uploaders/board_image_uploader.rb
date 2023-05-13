@@ -1,4 +1,4 @@
-class ThumbnailUploader < CarrierWave::Uploader::Base
+class BoardImageUploader < CarrierWave::Uploader::Base
   # Include RMagick or MiniMagick support:
   # include CarrierWave::RMagick
   # include CarrierWave::MiniMagick
@@ -14,8 +14,8 @@ class ThumbnailUploader < CarrierWave::Uploader::Base
   end
 
   # Provide a default URL as a default if there hasn't been a file uploaded:
-  def default_url(_args)
-    'sample.jpg'
+  def default_url(*args)
+    'board_placeholder.png'
   end
 
   # Process files as they are uploaded:
