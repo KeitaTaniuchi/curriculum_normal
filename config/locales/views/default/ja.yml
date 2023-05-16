@@ -4,9 +4,10 @@ ja:
     creation: "作成"
     login: "ログイン"
     logout: "ログアウト"
+    post: "投稿"
     profile: "プロフィール"
     register: "登録"
-    post: "投稿"
+    update: "更新"
   flash:
     created: "%{item}を作成しました"
     not_created: "%{item}を作成できませんでした"

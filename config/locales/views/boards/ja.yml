@@ -4,3 +4,5 @@ ja:
       no_message_board: "掲示板はありません"
     show:
       title: "掲示板詳細"
+    edit:
+      title: "掲示板編集"
