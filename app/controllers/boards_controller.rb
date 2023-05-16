@@ -1,10 +1,11 @@
 class BoardsController < ApplicationController
+  before_action :find_board, only: %i[show edit update]
+
   def index
     @boards = Board.all.includes(:user).order(created_at: :desc)
   end
 
   def show
-    @board = Board.find(params[:id])
     @comments = @board.comments.includes(:user).order(created_at: :desc)
     @comment = Comment.new
   end
@@ -23,9 +24,24 @@ class BoardsController < ApplicationController
     end
   end
 
+  def edit; end
+
+  def update
+    if @board.update!(board_params)
+      redirect_to board_path(@board), success: I18n.t('.flash.succeeded', item: I18n.t('.defaults.update'))
+    else
+      flash.now[:danger] = I18n.t('.flash.failed', item: I18n.t('.defaults.update'))
+      render :new
+    end
+  end
+
   private
 
   def board_params
     params.require(:board).permit(:title, :body, :board_image, :board_image_cache)
+  end
+
+  def find_board
+    @board = current_user.boards.find(params[:id])
   end
 end
