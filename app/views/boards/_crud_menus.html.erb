@@ -5,7 +5,7 @@
     <% end %>
   </li>
   <li class="list-inline-item">
-    <%= link_to '#', id: "button-delete-#{board.id}" do %>
+    <%= link_to board_path(board), id: "button-delete-#{board.id}", method: :delete, data: {confirm: I18n.t('boards.destroy.confirm_delete')} do %>
       <%= icon 'fas', 'trash' %>
     <% end %>
   </li>

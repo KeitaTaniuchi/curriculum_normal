@@ -1,5 +1,5 @@
 class BoardsController < ApplicationController
-  before_action :find_board, only: %i[show edit update]
+  before_action :find_board, only: %i[show edit update destroy]
 
   def index
     @boards = Board.all.includes(:user).order(created_at: :desc)
@@ -33,6 +33,11 @@ class BoardsController < ApplicationController
       flash.now[:danger] = I18n.t('.flash.failed', item: I18n.t('.defaults.update'))
       render :new
     end
+  end
+
+  def destroy
+    @board.destroy!
+    redirect_to boards_path, success: I18n.t('.flash.succeeded', item: I18n.t('.defaults.delete'))
   end
 
   private
