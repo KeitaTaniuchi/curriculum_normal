@@ -3,6 +3,12 @@ class BoardsController < ApplicationController
     @boards = Board.all.includes(:user).order(created_at: :desc)
   end
 
+  def show
+    @board = Board.find(params[:id])
+    @comments = @board.comments.includes(:user).order(created_at: :desc)
+    @comment = Comment.new
+  end
+
   def new
     @board = Board.new
   end

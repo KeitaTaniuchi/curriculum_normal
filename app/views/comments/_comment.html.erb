@@ -1,0 +1,39 @@
+<div class="row">
+  <div class="col-lg-8 offset-lg-2">
+    <table id="js-table-comment" class="table">
+      <tr id="comment-<%= comment.id %>">
+        <td style="width: 60px">
+          <img class="rounded-circle" src="sample.jpg" width="50" height="50" />
+        </td>
+        <td>
+          <h3 class="small"><%= comment.user.decorate.full_name %></h3>
+          <div id="js-comment-<%= comment.id %>">
+            <p><%= simple_format(comment.body) %></p>
+          </div>
+          <div id="js-textarea-comment-box-<%= comment.id %>" style="display: none;">
+            <textarea id="js-textarea-comment-<%= comment.id %>" class="form-control mb-1"><%= comment.body %></textarea>
+            <button class="btn btn-light js-button-edit-comment-cancel" data-comment-id="<%= comment.id %>">キャンセル</button>
+            <button class="btn btn-success js-button-comment-update" data-comment-id="<%= comment.id %>">更新</button>
+          </div>
+        </td>
+
+        <% if current_user.own?(comment) %>
+          <td class="action">
+            <ul class="list-inline justify-content-center" style="float: right;">
+              <li class="list-inline-item">
+                <a href="#" class='js-edit-comment-button' data-comment-id="<%= comment.id %>">
+                  <%= icon 'fa', 'pen' %>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class='js-delete-comment-button' data-comment-id="<%= comment.id %>">
+                  <%= icon 'fas', 'trash' %>
+                </a>
+              </li>
+            </ul>
+          </td>
+        <% end %>
+      </tr>
+    </table>
+  </div>
+</div>
