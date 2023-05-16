@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RunteqNormal</title>
+    <title><%= content_for?(:title) ? yield(:title) + " | RUNTEQ BOARD APP" : "RUNTEQ BOARD APP" %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
