@@ -3,6 +3,7 @@ ja:
     models:
       user: "ユーザー"
       board: "掲示板"
+      comment: "コメント"
     attributes:
       board:
         title: "タイトル"
@@ -14,3 +15,5 @@ ja:
         email: "メールアドレス"
         password: "パスワード"
         password_confirmation: "パスワード確認"
+      comment:
+        body: "コメント"
