@@ -2,19 +2,22 @@ ja:
   defaults:
     boards_creation: "掲示板作成"
     creation: "作成"
-    delete: "削除"
     login: "ログイン"
     logout: "ログアウト"
     post: "投稿"
     profile: "プロフィール"
     register: "登録"
-    update: "更新"
   flash:
     created: "%{item}を作成しました"
     not_created: "%{item}を作成できませんでした"
     succeeded: "%{item}に成功しました"
     failed: "%{item}に失敗しました"
     require_login: "ログインしてください"
+    not_created: "%{item}を作成できませんでした"
+    updated: "%{item}を更新しました"
+    not_updated: "%{item}を更新できませんでした"
+    deleted: "%{item}を削除しました"
+    delete_confirm: '削除しますか？'
   time:
     formats:
       default: "%Y/%m/%d %H:%M"

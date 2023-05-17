@@ -27,17 +27,17 @@ class BoardsController < ApplicationController
   def edit; end
 
   def update
-    if @board.update!(board_params)
-      redirect_to board_path(@board), success: I18n.t('.flash.succeeded', item: I18n.t('.defaults.update'))
+    if @board.update(board_params)
+      redirect_to board_path(@board), success: I18n.t('.flash.updated', item: Board.model_name.human)
     else
-      flash.now[:danger] = I18n.t('.flash.failed', item: I18n.t('.defaults.update'))
+      flash.now[:danger] = I18n.t('.flash.not_updated', item: Board.model_name.human)
       render :new
     end
   end
 
   def destroy
     @board.destroy!
-    redirect_to boards_path, success: I18n.t('.flash.succeeded', item: I18n.t('.defaults.delete'))
+    redirect_to boards_path, success: I18n.t('.flash.deleted', item: Board.model_name.human)
   end
 
   private
