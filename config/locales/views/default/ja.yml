@@ -12,12 +12,13 @@ ja:
     not_created: "%{item}を作成できませんでした"
     succeeded: "%{item}に成功しました"
     failed: "%{item}に失敗しました"
-    require_login: "ログインしてください"
-    not_created: "%{item}を作成できませんでした"
     updated: "%{item}を更新しました"
     not_updated: "%{item}を更新できませんでした"
     deleted: "%{item}を削除しました"
-    delete_confirm: '削除しますか？'
+    bookmarked: "ブックマークしました"
+    bookmark_removed: "ブックマークを外しました"
+    require_login: "ログインしてください"
+    delete_confirm: "削除しますか？"
   time:
     formats:
       default: "%Y/%m/%d %H:%M"
