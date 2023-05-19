@@ -8,3 +8,5 @@ ja:
       title: "掲示板編集"
     destroy:
       confirm_delete: "本当に削除してもよろしいですか？"
+    bookmarks:
+      no_message_bookmark_board: "ブックマーク中の掲示板がありません"
