@@ -1,0 +1,15 @@
+<div class="container pt-3">
+  <div class="row">
+    <div class="col-12">
+      <div class="row">
+        <% if @bookmark_boards.present? %>
+          <% @bookmark_boards.each do |board| %>
+            <%= render board %>
+          <% end %>
+        <% else %>
+          <p><%= t('.no_message_bookmark_board') %></p>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

@@ -12,6 +12,6 @@ Rails.application.routes.draw do
       get 'bookmarks'
     end
   end
-  resources :bookmarks, only: %i[create destroy]
+  resources :bookmarks, only: %i[index create destroy]
   resources :users, only: %i[new create]
 end

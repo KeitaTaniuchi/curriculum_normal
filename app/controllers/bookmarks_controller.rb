@@ -1,4 +1,8 @@
 class BookmarksController < ApplicationController
+  def index
+    @bookmark_boards = current_user.bookmark_boards
+  end
+
   def create
     board = Board.find(params[:board_id])
     current_user.bookmark(board)
