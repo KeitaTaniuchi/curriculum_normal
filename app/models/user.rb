@@ -2,7 +2,12 @@ class User < ApplicationRecord
   authenticates_with_sorcery!
 
   has_many :boards, dependent: :destroy
+  has_many :bookmarks, dependent: :destroy
   has_many :comments, dependent: :destroy
+  # throughオプションによりbookmark_boards経由でboardsにアクセスできるようになる
+  # 「@user.bookmark_boards」のように記述できる
+  # user.bookmarks.map(&:board)と同じ意味
+  has_many :bookmark_boards, through: :bookmarks, source: :board
 
   validates :last_name, presence: true, length: { maximum: 255 }
   validates :first_name, presence: true, length: { maximum: 255 }
@@ -16,5 +21,20 @@ class User < ApplicationRecord
 
   def own?(object)
     id == object.user_id
+  end
+
+  # bookmark_boardsに引数のboardが含まれているかを返す
+  def bookmark?(board)
+    bookmark_boards.include?(board)
+  end
+
+  # cuurent_userがブックマークしているboardの配列に引数のboardを入れる
+  def bookmark(board)
+    bookmark_boards << board
+  end
+
+  # 引数のboardのidをもつbookmarkをbookmark_boardsから削除する
+  def unbookmark(board)
+    bookmark_boards.destroy(board)
   end
 end

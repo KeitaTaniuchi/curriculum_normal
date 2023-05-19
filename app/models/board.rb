@@ -1,5 +1,6 @@
 class Board < ApplicationRecord
   has_many :comments, dependent: :destroy
+  has_many :bookmarks, dependent: :destroy
   belongs_to :user
 
   mount_uploader :board_image, BoardImageUploader
