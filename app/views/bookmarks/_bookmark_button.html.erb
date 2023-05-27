@@ -1,5 +1,7 @@
-<% if current_user.bookmark?(board)  %>
-  <%= render 'bookmarks/unbookmark', board: board %>
-<% else %>
-  <%= render 'bookmarks/bookmark', board: board %>
-<% end %>
+<div class='mr10 float-right'>
+  <% if current_user.bookmark?(board)  %>
+    <%= render 'bookmarks/unbookmark', board: board %>
+  <% else %>
+    <%= render 'bookmarks/bookmark', board: board %>
+  <% end %>
+</div>
