@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   delete '/logout',  to: 'user_sessions#destroy'
 
   resources :boards do
-    resources :comments, only: %i[create], shallow: true
+    resources :comments, only: %i[create destroy], shallow: true
     # /users/bookmarksにアクセスすると、userコントローラのbookmarksアクションが実行される
     collection do
       get 'bookmarks'

@@ -1,9 +1,8 @@
 <div class="row mb-3">
   <div class="col-lg-8 offset-lg-2">
-    <%= form_with(model: [@board, @comment], local: true) do |f| %>
-      <%= render 'shared/error_messages', object: f.object %>
+    <%= form_with(model: [@board, @comment], id: 'new_comment') do |f| %>
       <%= f.label :body, Comment.model_name.human %>
-      <%= f.text_area :body, class: 'form-control' %>
+      <%= f.text_area :body, class: 'form-control', id: "js-new-comment-body" %>
       <%= f.submit I18n.t('.defaults.post'), class: 'btn btn-primary' %>
     <% end %>
   </div>
