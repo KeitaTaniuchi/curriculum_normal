@@ -40,6 +40,7 @@ gem 'sorcery', '0.14.0'
 gem 'rails-i18n', '~> 5.1'
 gem 'draper'
 gem 'carrierwave'
+gem 'kaminari'
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
