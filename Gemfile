@@ -41,6 +41,7 @@ gem 'rails-i18n', '~> 5.1'
 gem 'draper'
 gem 'carrierwave'
 gem 'kaminari'
+gem 'bootstrap4-kaminari-views'
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
