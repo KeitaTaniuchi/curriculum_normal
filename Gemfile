@@ -42,6 +42,7 @@ gem 'draper'
 gem 'carrierwave'
 gem 'kaminari'
 gem 'bootstrap4-kaminari-views'
+gem 'ransack'
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
