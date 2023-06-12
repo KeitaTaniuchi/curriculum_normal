@@ -14,6 +14,7 @@ class User < ApplicationRecord
   validates :last_name, presence: true, length: { maximum: 255 }
   validates :first_name, presence: true, length: { maximum: 255 }
   validates :email, presence: true, uniqueness: true
+  validates :reset_password_token, uniqueness: true, allow_nil: true
 
   # sorceryの公式ドキュメントに書かれているバリデーション
   # https://github.com/Sorcery/sorcery/wiki/Simple-Password-Authentication
