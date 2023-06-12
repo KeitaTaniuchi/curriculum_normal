@@ -14,6 +14,6 @@ Rails.application.routes.draw do
   end
   resources :bookmarks, only: %i[index create destroy]
   resources :users, only: %i[new create]
-  resources :password_resets, only: [:create, :edit, :update]
+  resources :password_resets, only: %i[create edit update]
   resource :profile, only: %i[show edit update]
 end
