@@ -12,7 +12,6 @@
 //
 //= require rails-ujs
 //= require activestorage
-//= require_tree .
 
 // 自分で追加したやつ
 //= require jquery3
