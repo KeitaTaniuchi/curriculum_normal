@@ -14,6 +14,7 @@ class User < ApplicationRecord
   validates :last_name, presence: true, length: { maximum: 255 }
   validates :first_name, presence: true, length: { maximum: 255 }
   validates :email, presence: true, uniqueness: true
+  # allow_mil：対象の値がnilの場合にバリデーションをスキップ
   validates :reset_password_token, uniqueness: true, allow_nil: true
 
   # sorceryの公式ドキュメントに書かれているバリデーション
