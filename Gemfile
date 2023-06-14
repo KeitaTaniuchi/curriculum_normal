@@ -45,6 +45,7 @@ gem 'bootstrap4-kaminari-views'
 gem 'ransack'
 gem 'letter_opener_web', '~> 1.3.4'
 gem 'config'
+gem 'enum_help'
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
