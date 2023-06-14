@@ -17,3 +17,8 @@ ja:
         password_confirmation: "パスワード確認"
       comment:
         body: "コメント"
+    enums:
+      user:
+        role:
+          general: "一般"
+          admin: "管理者"
