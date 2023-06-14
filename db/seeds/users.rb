@@ -4,7 +4,8 @@ User.create!(
   first_name: "圭太",
   email: "barbeekonta1995@gmail.com",
   password: "test",
-  password_confirmation: "test"
+  password_confirmation: "test",
+  role: 1
 )
 puts '✨Finish creating administrator!!'
 
