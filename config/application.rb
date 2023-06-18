@@ -23,6 +23,7 @@ module RunteqNormal
     config.load_defaults 5.2
     # 自分で追加したやつ
     config.time_zone = 'Asia/Tokyo'
+    config.active_record.default_timezone = :local
 
     # 自分で追加したやつ
     # https://railsguides.jp/i18n.html#%E4%BB%96%E3%81%AE%E3%83%AD%E3%82%B1%E3%83%BC%E3%83%AB%E5%90%91%E3%81%91%E3%81%AE%E6%B4%BB%E7%94%A8%E5%BD%A2%E3%83%AB%E3%83%BC%E3%83%AB%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B
